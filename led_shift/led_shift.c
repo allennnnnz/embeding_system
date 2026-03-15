@@ -7,8 +7,10 @@ void delay(unsigned int s);
 void main()
 {
 	unsigned char LED;
+    //LED燈初始狀態為0000 0001，P1口初始狀態為1111 1110
 	LED=0x01;
 	P1=0xfe;
+    //延遲一段時間後，LED燈從右向左移動
 	while(1)
 	{
 		delay(8000);
